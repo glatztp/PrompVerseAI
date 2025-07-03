@@ -3,7 +3,7 @@ export default {
   darkMode: ["class"],
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}" // <-- caminho correto pro seu projeto
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -54,7 +54,19 @@ export default {
           5: "hsl(var(--chart-5))",
         },
       },
+      keyframes: {
+        thumbElastic: {
+          "0%": { transform: "scaleX(1)" },
+          "30%": { transform: "scaleX(1.2)" },
+          "50%": { transform: "scaleX(0.85)" },
+          "70%": { transform: "scaleX(1.1)" },
+          "100%": { transform: "scaleX(1)" },
+        },
+      },
+      animation: {
+        thumbElastic: "thumbElastic 0.5s ease forwards",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

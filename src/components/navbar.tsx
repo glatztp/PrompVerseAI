@@ -15,10 +15,10 @@ export default function Navbar() {
       className="bg-white dark:bg-black text-black dark:text-white px-6 sm:px-10 lg:px-20 py-4 flex flex-wrap items-center justify-between border-b border-black/40 dark:border-neutral-200/20 gap-y-6 transition-colors duration-300 relative"
     >
       <ul className="flex flex-wrap items-center gap-4 text-sm sm:text-base order-2 sm:order-1 w-full sm:w-auto justify-center sm:justify-start">
-        <li><a href="/about" className="hover:text-neutral-500 dark:hover:text-neutral-400 transition-colors">About</a></li>
-        <li><a href="/technologies" className="hover:text-neutral-500 dark:hover:text-neutral-400 transition-colors">Technologies</a></li>
+        <li><a href="#about" className="hover:text-neutral-500 dark:hover:text-neutral-400 transition-colors">About</a></li>
+        <li><a href="#tecnologies" className="hover:text-neutral-500 dark:hover:text-neutral-400 transition-colors">Technologies</a></li>
         <li><a href="/products" className="hover:text-neutral-500 dark:hover:text-neutral-400 transition-colors">Products</a></li>
-        <li><a href="/discover" className="hover:text-neutral-500 dark:hover:text-neutral-400 transition-colors">Discover</a></li>
+        <li><a href="#discover" className="hover:text-neutral-500 dark:hover:text-neutral-400 transition-colors">Discover</a></li>
       </ul>
 
       <div className="flex items-center gap-3 order-1 sm:order-2 w-full sm:w-auto justify-center">

@@ -20,7 +20,6 @@ function PromptCard({ url }: { url: string }) {
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
     >
-      {/* Frame branco animado */}
       <motion.div
         className="pointer-events-none absolute inset-0 border border-white opacity-0 rounded-none"
         initial={{ opacity: 0 }}
@@ -59,7 +58,7 @@ export default function Prompt() {
         isDark ? "dark bg-black text-white" : "light bg-white text-black"
       }`}
     >
-      <div className="w-full flex flex-col items-center space-y-12 px-6">
+      <div id="about" className="w-full flex flex-col items-center space-y-12 ">
         <SplitText
           text={`Create more with PromptVerse`}
           className="text-4xl sm:text-5xl leading-tight whitespace-pre-line"
@@ -84,7 +83,6 @@ export default function Prompt() {
           within a sleek, futuristic design. Create more, effortlessly.
         </p>
 
-        {/* Animação geral no container */}
         <motion.div
           className="w-full space-y-6"
           initial={{ opacity: 0, y: 30 }}

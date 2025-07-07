@@ -15,7 +15,7 @@ function Visualization() {
   };
 
   return (
-    <div
+    <div id="discover"
       className={`flex flex-col items-center mx-auto px-6 py-20 gap-24 transition-colors duration-300 ${
         isDark ? "bg-black text-white" : "bg-white text-black"
       }`}
@@ -78,6 +78,7 @@ function Visualization() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         className="flex flex-col items-center max-w-4xl text-center gap-6 py-24"
+        id="tecnologies"
       >
         <h1 className="text-4xl sm:text-5xl leading-tight">
           Images like never seen before
